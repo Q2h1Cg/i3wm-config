@@ -170,13 +170,13 @@ mode "$mode_system" {
 }
 
 # sound control
-bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master playback 5+
-bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master playback 5-
-bindsym XF86AudioMute exec amixer -q -c 1 set Master toggle && amixer -q -c 1 set Headphone unmute
+bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q -c 1 set Master playback 5+
+bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q -c 1 set Master playback 5-
+bindsym XF86AudioMute exec --no-startup-id amixer -q -c 1 set Master toggle && amixer -q -c 1 set Headphone unmute
 
 # brightness control
-bindsym XF86MonBrightnessDown exec light -U 5
-bindsym XF86MonBrightnessUp exec light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 
 # rofi
 bindsym Mod1+space exec --no-startup-id "rofi -show combi -combi-modi window,drun,run,ssh -modi combi"
