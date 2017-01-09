@@ -182,6 +182,6 @@ bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
 bindsym Mod1+space exec --no-startup-id "rofi -show combi -combi-modi window,drun,run,ssh -modi combi"
 
 # startup
-exec --no-startup-id /opt/cow/cow
+exec --no-startup-id /opt/meowproxy/MEOW
 exec --no-startup-id xrandr --output HDMI-2 --auto --rotate right --left-of eDP-1
 exec --no-startup-id feh --bg-scale "$HOME/Pictures/Desktop.jpg"
